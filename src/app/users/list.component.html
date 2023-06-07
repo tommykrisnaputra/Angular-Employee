@@ -1,0 +1,2721 @@
+﻿<h1>Employee List</h1>
+<a routerLink="add" class="btn btn-sm btn-success mb-2">Add Employee</a>
+<table datatable [dtOptions]="dtOptions" class="row-border hover">
+  <thead>
+    <tr>
+      <th>Username</th>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>Email</th>
+      <th>Birthday</th>
+      <th>Basic Salary</th>
+      <th>Status</th>
+      <th>Group</th>
+      <th>Description</th>
+      <th>Action</th>
+      <th>Detail</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>admin</td>
+      <td>Tommy</td>
+      <td>Krisna</td>
+      <td>tommykpwork@gmail.com"</td>
+      <td>2022-03-25</td>
+      <td>35000000</td>
+      <td>active</td>
+      <td>Apple</td>
+      <td>2022-03-25</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="deleteNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/1" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>admin2</td>
+      <td>Tommy2</td>
+      <td>Krisna2</td>
+      <td>tommykpwork2@gmail.com</td>
+      <td>2022-03-30</td>
+      <td>5000000</td>
+      <td>active</td>
+      <td>Microsoft</td>
+      <td>2022-03-30</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/2" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Macon Talley</td>
+      <td>India Andrews</td>
+      <td>Terry</td>
+      <td>nunc.pulvinar@aol.couk</td>
+      <td>2022-12-9</td>
+      <td>1772558</td>
+      <td>active</td>
+      <td>Twitter</td>
+      <td>2023-04-15</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/3" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Tobias Austin</td>
+      <td>Hollee Witt</td>
+      <td>Hyde</td>
+      <td>turpis.egestas@yahoo.ca</td>
+      <td>2023-12-24</td>
+      <td>2257536</td>
+      <td>active</td>
+      <td>Microsoft</td>
+      <td>2022-08-6</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/5" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Odessa Bullock</td>
+      <td>Carson Conner</td>
+      <td>Atkinson</td>
+      <td>mauris.nulla@aol.net</td>
+      <td>2023-08-29</td>
+      <td>4554143</td>
+      <td>active</td>
+      <td>Apple</td>
+      <td>2023-07-22</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/6" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Carson Kidd</td>
+      <td>Madonna Scott</td>
+      <td>Richard</td>
+      <td>ante@google.net</td>
+      <td>2022-08-24</td>
+      <td>2606556</td>
+      <td>active</td>
+      <td>Tesla</td>
+      <td>2024-03-14</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/4" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Nolan Rodgers</td>
+      <td>Briar Chandler</td>
+      <td>Ross</td>
+      <td>purus.accumsan@yahoo.org</td>
+      <td>2023-01-15</td>
+      <td>3900399</td>
+      <td>active</td>
+      <td>Cognizant</td>
+      <td>2024-03-30</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/7" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Hiroko Keller</td>
+      <td>Kirsten Gay</td>
+      <td>Patrick</td>
+      <td>nascetur@outlook.couk</td>
+      <td>2024-02-9</td>
+      <td>2420369</td>
+      <td>active</td>
+      <td>Twitter</td>
+      <td>2023-09-17</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/8" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Basil Bonner</td>
+      <td>Leslie Barker</td>
+      <td>Cardenas</td>
+      <td>pellentesque@google.com</td>
+      <td>2024-05-7</td>
+      <td>4305479</td>
+      <td>active</td>
+      <td>Tesla</td>
+      <td>2023-05-6</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/9" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Cailin Huffman</td>
+      <td>Olga Mejia</td>
+      <td>Solis</td>
+      <td>purus.sapien.gravida@icloud.edu</td>
+      <td>2023-07-24</td>
+      <td>3186254</td>
+      <td>active</td>
+      <td>Microsoft</td>
+      <td>2023-05-31</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/10" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>admin</td>
+      <td>Tommy</td>
+      <td>Krisna</td>
+      <td>tommykpwork@gmail.com"</td>
+      <td>2022-03-25</td>
+      <td>35000000</td>
+      <td>active</td>
+      <td>Apple</td>
+      <td>2022-03-25</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="deleteNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/1" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>admin2</td>
+      <td>Tommy2</td>
+      <td>Krisna2</td>
+      <td>tommykpwork2@gmail.com</td>
+      <td>2022-03-30</td>
+      <td>5000000</td>
+      <td>active</td>
+      <td>Microsoft</td>
+      <td>2022-03-30</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/2" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Macon Talley</td>
+      <td>India Andrews</td>
+      <td>Terry</td>
+      <td>nunc.pulvinar@aol.couk</td>
+      <td>2022-12-9</td>
+      <td>1772558</td>
+      <td>active</td>
+      <td>Twitter</td>
+      <td>2023-04-15</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/3" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Tobias Austin</td>
+      <td>Hollee Witt</td>
+      <td>Hyde</td>
+      <td>turpis.egestas@yahoo.ca</td>
+      <td>2023-12-24</td>
+      <td>2257536</td>
+      <td>active</td>
+      <td>Microsoft</td>
+      <td>2022-08-6</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/5" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Odessa Bullock</td>
+      <td>Carson Conner</td>
+      <td>Atkinson</td>
+      <td>mauris.nulla@aol.net</td>
+      <td>2023-08-29</td>
+      <td>4554143</td>
+      <td>active</td>
+      <td>Apple</td>
+      <td>2023-07-22</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/6" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Carson Kidd</td>
+      <td>Madonna Scott</td>
+      <td>Richard</td>
+      <td>ante@google.net</td>
+      <td>2022-08-24</td>
+      <td>2606556</td>
+      <td>active</td>
+      <td>Tesla</td>
+      <td>2024-03-14</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/4" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Nolan Rodgers</td>
+      <td>Briar Chandler</td>
+      <td>Ross</td>
+      <td>purus.accumsan@yahoo.org</td>
+      <td>2023-01-15</td>
+      <td>3900399</td>
+      <td>active</td>
+      <td>Cognizant</td>
+      <td>2024-03-30</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/7" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Hiroko Keller</td>
+      <td>Kirsten Gay</td>
+      <td>Patrick</td>
+      <td>nascetur@outlook.couk</td>
+      <td>2024-02-9</td>
+      <td>2420369</td>
+      <td>active</td>
+      <td>Twitter</td>
+      <td>2023-09-17</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/8" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Basil Bonner</td>
+      <td>Leslie Barker</td>
+      <td>Cardenas</td>
+      <td>pellentesque@google.com</td>
+      <td>2024-05-7</td>
+      <td>4305479</td>
+      <td>active</td>
+      <td>Tesla</td>
+      <td>2023-05-6</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/9" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Cailin Huffman</td>
+      <td>Olga Mejia</td>
+      <td>Solis</td>
+      <td>purus.sapien.gravida@icloud.edu</td>
+      <td>2023-07-24</td>
+      <td>3186254</td>
+      <td>active</td>
+      <td>Microsoft</td>
+      <td>2023-05-31</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/10" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>admin</td>
+      <td>Tommy</td>
+      <td>Krisna</td>
+      <td>tommykpwork@gmail.com"</td>
+      <td>2022-03-25</td>
+      <td>35000000</td>
+      <td>active</td>
+      <td>Apple</td>
+      <td>2022-03-25</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="deleteNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/1" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>admin2</td>
+      <td>Tommy2</td>
+      <td>Krisna2</td>
+      <td>tommykpwork2@gmail.com</td>
+      <td>2022-03-30</td>
+      <td>5000000</td>
+      <td>active</td>
+      <td>Microsoft</td>
+      <td>2022-03-30</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/2" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Macon Talley</td>
+      <td>India Andrews</td>
+      <td>Terry</td>
+      <td>nunc.pulvinar@aol.couk</td>
+      <td>2022-12-9</td>
+      <td>1772558</td>
+      <td>active</td>
+      <td>Twitter</td>
+      <td>2023-04-15</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/3" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Tobias Austin</td>
+      <td>Hollee Witt</td>
+      <td>Hyde</td>
+      <td>turpis.egestas@yahoo.ca</td>
+      <td>2023-12-24</td>
+      <td>2257536</td>
+      <td>active</td>
+      <td>Microsoft</td>
+      <td>2022-08-6</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/5" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Odessa Bullock</td>
+      <td>Carson Conner</td>
+      <td>Atkinson</td>
+      <td>mauris.nulla@aol.net</td>
+      <td>2023-08-29</td>
+      <td>4554143</td>
+      <td>active</td>
+      <td>Apple</td>
+      <td>2023-07-22</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/6" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Carson Kidd</td>
+      <td>Madonna Scott</td>
+      <td>Richard</td>
+      <td>ante@google.net</td>
+      <td>2022-08-24</td>
+      <td>2606556</td>
+      <td>active</td>
+      <td>Tesla</td>
+      <td>2024-03-14</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/4" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Nolan Rodgers</td>
+      <td>Briar Chandler</td>
+      <td>Ross</td>
+      <td>purus.accumsan@yahoo.org</td>
+      <td>2023-01-15</td>
+      <td>3900399</td>
+      <td>active</td>
+      <td>Cognizant</td>
+      <td>2024-03-30</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/7" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Hiroko Keller</td>
+      <td>Kirsten Gay</td>
+      <td>Patrick</td>
+      <td>nascetur@outlook.couk</td>
+      <td>2024-02-9</td>
+      <td>2420369</td>
+      <td>active</td>
+      <td>Twitter</td>
+      <td>2023-09-17</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/8" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Basil Bonner</td>
+      <td>Leslie Barker</td>
+      <td>Cardenas</td>
+      <td>pellentesque@google.com</td>
+      <td>2024-05-7</td>
+      <td>4305479</td>
+      <td>active</td>
+      <td>Tesla</td>
+      <td>2023-05-6</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/9" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Cailin Huffman</td>
+      <td>Olga Mejia</td>
+      <td>Solis</td>
+      <td>purus.sapien.gravida@icloud.edu</td>
+      <td>2023-07-24</td>
+      <td>3186254</td>
+      <td>active</td>
+      <td>Microsoft</td>
+      <td>2023-05-31</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/10" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>admin</td>
+      <td>Tommy</td>
+      <td>Krisna</td>
+      <td>tommykpwork@gmail.com"</td>
+      <td>2022-03-25</td>
+      <td>35000000</td>
+      <td>active</td>
+      <td>Apple</td>
+      <td>2022-03-25</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="deleteNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/1" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>admin2</td>
+      <td>Tommy2</td>
+      <td>Krisna2</td>
+      <td>tommykpwork2@gmail.com</td>
+      <td>2022-03-30</td>
+      <td>5000000</td>
+      <td>active</td>
+      <td>Microsoft</td>
+      <td>2022-03-30</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/2" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Macon Talley</td>
+      <td>India Andrews</td>
+      <td>Terry</td>
+      <td>nunc.pulvinar@aol.couk</td>
+      <td>2022-12-9</td>
+      <td>1772558</td>
+      <td>active</td>
+      <td>Twitter</td>
+      <td>2023-04-15</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/3" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Tobias Austin</td>
+      <td>Hollee Witt</td>
+      <td>Hyde</td>
+      <td>turpis.egestas@yahoo.ca</td>
+      <td>2023-12-24</td>
+      <td>2257536</td>
+      <td>active</td>
+      <td>Microsoft</td>
+      <td>2022-08-6</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/5" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Odessa Bullock</td>
+      <td>Carson Conner</td>
+      <td>Atkinson</td>
+      <td>mauris.nulla@aol.net</td>
+      <td>2023-08-29</td>
+      <td>4554143</td>
+      <td>active</td>
+      <td>Apple</td>
+      <td>2023-07-22</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/6" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Carson Kidd</td>
+      <td>Madonna Scott</td>
+      <td>Richard</td>
+      <td>ante@google.net</td>
+      <td>2022-08-24</td>
+      <td>2606556</td>
+      <td>active</td>
+      <td>Tesla</td>
+      <td>2024-03-14</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/4" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Nolan Rodgers</td>
+      <td>Briar Chandler</td>
+      <td>Ross</td>
+      <td>purus.accumsan@yahoo.org</td>
+      <td>2023-01-15</td>
+      <td>3900399</td>
+      <td>active</td>
+      <td>Cognizant</td>
+      <td>2024-03-30</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/7" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Hiroko Keller</td>
+      <td>Kirsten Gay</td>
+      <td>Patrick</td>
+      <td>nascetur@outlook.couk</td>
+      <td>2024-02-9</td>
+      <td>2420369</td>
+      <td>active</td>
+      <td>Twitter</td>
+      <td>2023-09-17</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/8" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Basil Bonner</td>
+      <td>Leslie Barker</td>
+      <td>Cardenas</td>
+      <td>pellentesque@google.com</td>
+      <td>2024-05-7</td>
+      <td>4305479</td>
+      <td>active</td>
+      <td>Tesla</td>
+      <td>2023-05-6</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/9" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Cailin Huffman</td>
+      <td>Olga Mejia</td>
+      <td>Solis</td>
+      <td>purus.sapien.gravida@icloud.edu</td>
+      <td>2023-07-24</td>
+      <td>3186254</td>
+      <td>active</td>
+      <td>Microsoft</td>
+      <td>2023-05-31</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/10" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>admin</td>
+      <td>Tommy</td>
+      <td>Krisna</td>
+      <td>tommykpwork@gmail.com"</td>
+      <td>2022-03-25</td>
+      <td>35000000</td>
+      <td>active</td>
+      <td>Apple</td>
+      <td>2022-03-25</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="deleteNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/1" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>admin2</td>
+      <td>Tommy2</td>
+      <td>Krisna2</td>
+      <td>tommykpwork2@gmail.com</td>
+      <td>2022-03-30</td>
+      <td>5000000</td>
+      <td>active</td>
+      <td>Microsoft</td>
+      <td>2022-03-30</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/2" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Macon Talley</td>
+      <td>India Andrews</td>
+      <td>Terry</td>
+      <td>nunc.pulvinar@aol.couk</td>
+      <td>2022-12-9</td>
+      <td>1772558</td>
+      <td>active</td>
+      <td>Twitter</td>
+      <td>2023-04-15</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/3" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Tobias Austin</td>
+      <td>Hollee Witt</td>
+      <td>Hyde</td>
+      <td>turpis.egestas@yahoo.ca</td>
+      <td>2023-12-24</td>
+      <td>2257536</td>
+      <td>active</td>
+      <td>Microsoft</td>
+      <td>2022-08-6</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/5" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Odessa Bullock</td>
+      <td>Carson Conner</td>
+      <td>Atkinson</td>
+      <td>mauris.nulla@aol.net</td>
+      <td>2023-08-29</td>
+      <td>4554143</td>
+      <td>active</td>
+      <td>Apple</td>
+      <td>2023-07-22</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/6" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Carson Kidd</td>
+      <td>Madonna Scott</td>
+      <td>Richard</td>
+      <td>ante@google.net</td>
+      <td>2022-08-24</td>
+      <td>2606556</td>
+      <td>active</td>
+      <td>Tesla</td>
+      <td>2024-03-14</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/4" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Nolan Rodgers</td>
+      <td>Briar Chandler</td>
+      <td>Ross</td>
+      <td>purus.accumsan@yahoo.org</td>
+      <td>2023-01-15</td>
+      <td>3900399</td>
+      <td>active</td>
+      <td>Cognizant</td>
+      <td>2024-03-30</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/7" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Hiroko Keller</td>
+      <td>Kirsten Gay</td>
+      <td>Patrick</td>
+      <td>nascetur@outlook.couk</td>
+      <td>2024-02-9</td>
+      <td>2420369</td>
+      <td>active</td>
+      <td>Twitter</td>
+      <td>2023-09-17</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/8" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Basil Bonner</td>
+      <td>Leslie Barker</td>
+      <td>Cardenas</td>
+      <td>pellentesque@google.com</td>
+      <td>2024-05-7</td>
+      <td>4305479</td>
+      <td>active</td>
+      <td>Tesla</td>
+      <td>2023-05-6</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/9" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Cailin Huffman</td>
+      <td>Olga Mejia</td>
+      <td>Solis</td>
+      <td>purus.sapien.gravida@icloud.edu</td>
+      <td>2023-07-24</td>
+      <td>3186254</td>
+      <td>active</td>
+      <td>Microsoft</td>
+      <td>2023-05-31</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/10" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>admin</td>
+      <td>Tommy</td>
+      <td>Krisna</td>
+      <td>tommykpwork@gmail.com"</td>
+      <td>2022-03-25</td>
+      <td>35000000</td>
+      <td>active</td>
+      <td>Apple</td>
+      <td>2022-03-25</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="deleteNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/1" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>admin2</td>
+      <td>Tommy2</td>
+      <td>Krisna2</td>
+      <td>tommykpwork2@gmail.com</td>
+      <td>2022-03-30</td>
+      <td>5000000</td>
+      <td>active</td>
+      <td>Microsoft</td>
+      <td>2022-03-30</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/2" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Macon Talley</td>
+      <td>India Andrews</td>
+      <td>Terry</td>
+      <td>nunc.pulvinar@aol.couk</td>
+      <td>2022-12-9</td>
+      <td>1772558</td>
+      <td>active</td>
+      <td>Twitter</td>
+      <td>2023-04-15</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/3" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Tobias Austin</td>
+      <td>Hollee Witt</td>
+      <td>Hyde</td>
+      <td>turpis.egestas@yahoo.ca</td>
+      <td>2023-12-24</td>
+      <td>2257536</td>
+      <td>active</td>
+      <td>Microsoft</td>
+      <td>2022-08-6</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/5" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Odessa Bullock</td>
+      <td>Carson Conner</td>
+      <td>Atkinson</td>
+      <td>mauris.nulla@aol.net</td>
+      <td>2023-08-29</td>
+      <td>4554143</td>
+      <td>active</td>
+      <td>Apple</td>
+      <td>2023-07-22</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/6" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Carson Kidd</td>
+      <td>Madonna Scott</td>
+      <td>Richard</td>
+      <td>ante@google.net</td>
+      <td>2022-08-24</td>
+      <td>2606556</td>
+      <td>active</td>
+      <td>Tesla</td>
+      <td>2024-03-14</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/4" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Nolan Rodgers</td>
+      <td>Briar Chandler</td>
+      <td>Ross</td>
+      <td>purus.accumsan@yahoo.org</td>
+      <td>2023-01-15</td>
+      <td>3900399</td>
+      <td>active</td>
+      <td>Cognizant</td>
+      <td>2024-03-30</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/7" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Hiroko Keller</td>
+      <td>Kirsten Gay</td>
+      <td>Patrick</td>
+      <td>nascetur@outlook.couk</td>
+      <td>2024-02-9</td>
+      <td>2420369</td>
+      <td>active</td>
+      <td>Twitter</td>
+      <td>2023-09-17</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/8" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Basil Bonner</td>
+      <td>Leslie Barker</td>
+      <td>Cardenas</td>
+      <td>pellentesque@google.com</td>
+      <td>2024-05-7</td>
+      <td>4305479</td>
+      <td>active</td>
+      <td>Tesla</td>
+      <td>2023-05-6</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/9" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Cailin Huffman</td>
+      <td>Olga Mejia</td>
+      <td>Solis</td>
+      <td>purus.sapien.gravida@icloud.edu</td>
+      <td>2023-07-24</td>
+      <td>3186254</td>
+      <td>active</td>
+      <td>Microsoft</td>
+      <td>2023-05-31</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/10" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>admin</td>
+      <td>Tommy</td>
+      <td>Krisna</td>
+      <td>tommykpwork@gmail.com"</td>
+      <td>2022-03-25</td>
+      <td>35000000</td>
+      <td>active</td>
+      <td>Apple</td>
+      <td>2022-03-25</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="deleteNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/1" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>admin2</td>
+      <td>Tommy2</td>
+      <td>Krisna2</td>
+      <td>tommykpwork2@gmail.com</td>
+      <td>2022-03-30</td>
+      <td>5000000</td>
+      <td>active</td>
+      <td>Microsoft</td>
+      <td>2022-03-30</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/2" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Macon Talley</td>
+      <td>India Andrews</td>
+      <td>Terry</td>
+      <td>nunc.pulvinar@aol.couk</td>
+      <td>2022-12-9</td>
+      <td>1772558</td>
+      <td>active</td>
+      <td>Twitter</td>
+      <td>2023-04-15</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/3" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Tobias Austin</td>
+      <td>Hollee Witt</td>
+      <td>Hyde</td>
+      <td>turpis.egestas@yahoo.ca</td>
+      <td>2023-12-24</td>
+      <td>2257536</td>
+      <td>active</td>
+      <td>Microsoft</td>
+      <td>2022-08-6</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/5" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Odessa Bullock</td>
+      <td>Carson Conner</td>
+      <td>Atkinson</td>
+      <td>mauris.nulla@aol.net</td>
+      <td>2023-08-29</td>
+      <td>4554143</td>
+      <td>active</td>
+      <td>Apple</td>
+      <td>2023-07-22</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/6" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Carson Kidd</td>
+      <td>Madonna Scott</td>
+      <td>Richard</td>
+      <td>ante@google.net</td>
+      <td>2022-08-24</td>
+      <td>2606556</td>
+      <td>active</td>
+      <td>Tesla</td>
+      <td>2024-03-14</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/4" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Nolan Rodgers</td>
+      <td>Briar Chandler</td>
+      <td>Ross</td>
+      <td>purus.accumsan@yahoo.org</td>
+      <td>2023-01-15</td>
+      <td>3900399</td>
+      <td>active</td>
+      <td>Cognizant</td>
+      <td>2024-03-30</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/7" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Hiroko Keller</td>
+      <td>Kirsten Gay</td>
+      <td>Patrick</td>
+      <td>nascetur@outlook.couk</td>
+      <td>2024-02-9</td>
+      <td>2420369</td>
+      <td>active</td>
+      <td>Twitter</td>
+      <td>2023-09-17</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/8" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Basil Bonner</td>
+      <td>Leslie Barker</td>
+      <td>Cardenas</td>
+      <td>pellentesque@google.com</td>
+      <td>2024-05-7</td>
+      <td>4305479</td>
+      <td>active</td>
+      <td>Tesla</td>
+      <td>2023-05-6</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/9" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Cailin Huffman</td>
+      <td>Olga Mejia</td>
+      <td>Solis</td>
+      <td>purus.sapien.gravida@icloud.edu</td>
+      <td>2023-07-24</td>
+      <td>3186254</td>
+      <td>active</td>
+      <td>Microsoft</td>
+      <td>2023-05-31</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/10" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>admin</td>
+      <td>Tommy</td>
+      <td>Krisna</td>
+      <td>tommykpwork@gmail.com"</td>
+      <td>2022-03-25</td>
+      <td>35000000</td>
+      <td>active</td>
+      <td>Apple</td>
+      <td>2022-03-25</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="deleteNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/1" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>admin2</td>
+      <td>Tommy2</td>
+      <td>Krisna2</td>
+      <td>tommykpwork2@gmail.com</td>
+      <td>2022-03-30</td>
+      <td>5000000</td>
+      <td>active</td>
+      <td>Microsoft</td>
+      <td>2022-03-30</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/2" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Macon Talley</td>
+      <td>India Andrews</td>
+      <td>Terry</td>
+      <td>nunc.pulvinar@aol.couk</td>
+      <td>2022-12-9</td>
+      <td>1772558</td>
+      <td>active</td>
+      <td>Twitter</td>
+      <td>2023-04-15</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/3" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Tobias Austin</td>
+      <td>Hollee Witt</td>
+      <td>Hyde</td>
+      <td>turpis.egestas@yahoo.ca</td>
+      <td>2023-12-24</td>
+      <td>2257536</td>
+      <td>active</td>
+      <td>Microsoft</td>
+      <td>2022-08-6</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/5" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Odessa Bullock</td>
+      <td>Carson Conner</td>
+      <td>Atkinson</td>
+      <td>mauris.nulla@aol.net</td>
+      <td>2023-08-29</td>
+      <td>4554143</td>
+      <td>active</td>
+      <td>Apple</td>
+      <td>2023-07-22</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/6" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Carson Kidd</td>
+      <td>Madonna Scott</td>
+      <td>Richard</td>
+      <td>ante@google.net</td>
+      <td>2022-08-24</td>
+      <td>2606556</td>
+      <td>active</td>
+      <td>Tesla</td>
+      <td>2024-03-14</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/4" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Nolan Rodgers</td>
+      <td>Briar Chandler</td>
+      <td>Ross</td>
+      <td>purus.accumsan@yahoo.org</td>
+      <td>2023-01-15</td>
+      <td>3900399</td>
+      <td>active</td>
+      <td>Cognizant</td>
+      <td>2024-03-30</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/7" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Hiroko Keller</td>
+      <td>Kirsten Gay</td>
+      <td>Patrick</td>
+      <td>nascetur@outlook.couk</td>
+      <td>2024-02-9</td>
+      <td>2420369</td>
+      <td>active</td>
+      <td>Twitter</td>
+      <td>2023-09-17</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/8" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Basil Bonner</td>
+      <td>Leslie Barker</td>
+      <td>Cardenas</td>
+      <td>pellentesque@google.com</td>
+      <td>2024-05-7</td>
+      <td>4305479</td>
+      <td>active</td>
+      <td>Tesla</td>
+      <td>2023-05-6</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/9" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Cailin Huffman</td>
+      <td>Olga Mejia</td>
+      <td>Solis</td>
+      <td>purus.sapien.gravida@icloud.edu</td>
+      <td>2023-07-24</td>
+      <td>3186254</td>
+      <td>active</td>
+      <td>Microsoft</td>
+      <td>2023-05-31</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/10" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>admin</td>
+      <td>Tommy</td>
+      <td>Krisna</td>
+      <td>tommykpwork@gmail.com"</td>
+      <td>2022-03-25</td>
+      <td>35000000</td>
+      <td>active</td>
+      <td>Apple</td>
+      <td>2022-03-25</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="deleteNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/1" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>admin2</td>
+      <td>Tommy2</td>
+      <td>Krisna2</td>
+      <td>tommykpwork2@gmail.com</td>
+      <td>2022-03-30</td>
+      <td>5000000</td>
+      <td>active</td>
+      <td>Microsoft</td>
+      <td>2022-03-30</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/2" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Macon Talley</td>
+      <td>India Andrews</td>
+      <td>Terry</td>
+      <td>nunc.pulvinar@aol.couk</td>
+      <td>2022-12-9</td>
+      <td>1772558</td>
+      <td>active</td>
+      <td>Twitter</td>
+      <td>2023-04-15</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/3" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Tobias Austin</td>
+      <td>Hollee Witt</td>
+      <td>Hyde</td>
+      <td>turpis.egestas@yahoo.ca</td>
+      <td>2023-12-24</td>
+      <td>2257536</td>
+      <td>active</td>
+      <td>Microsoft</td>
+      <td>2022-08-6</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/5" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Odessa Bullock</td>
+      <td>Carson Conner</td>
+      <td>Atkinson</td>
+      <td>mauris.nulla@aol.net</td>
+      <td>2023-08-29</td>
+      <td>4554143</td>
+      <td>active</td>
+      <td>Apple</td>
+      <td>2023-07-22</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/6" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Carson Kidd</td>
+      <td>Madonna Scott</td>
+      <td>Richard</td>
+      <td>ante@google.net</td>
+      <td>2022-08-24</td>
+      <td>2606556</td>
+      <td>active</td>
+      <td>Tesla</td>
+      <td>2024-03-14</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/4" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Nolan Rodgers</td>
+      <td>Briar Chandler</td>
+      <td>Ross</td>
+      <td>purus.accumsan@yahoo.org</td>
+      <td>2023-01-15</td>
+      <td>3900399</td>
+      <td>active</td>
+      <td>Cognizant</td>
+      <td>2024-03-30</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/7" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Hiroko Keller</td>
+      <td>Kirsten Gay</td>
+      <td>Patrick</td>
+      <td>nascetur@outlook.couk</td>
+      <td>2024-02-9</td>
+      <td>2420369</td>
+      <td>active</td>
+      <td>Twitter</td>
+      <td>2023-09-17</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/8" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Basil Bonner</td>
+      <td>Leslie Barker</td>
+      <td>Cardenas</td>
+      <td>pellentesque@google.com</td>
+      <td>2024-05-7</td>
+      <td>4305479</td>
+      <td>active</td>
+      <td>Tesla</td>
+      <td>2023-05-6</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/9" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Cailin Huffman</td>
+      <td>Olga Mejia</td>
+      <td>Solis</td>
+      <td>purus.sapien.gravida@icloud.edu</td>
+      <td>2023-07-24</td>
+      <td>3186254</td>
+      <td>active</td>
+      <td>Microsoft</td>
+      <td>2023-05-31</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/10" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>admin</td>
+      <td>Tommy</td>
+      <td>Krisna</td>
+      <td>tommykpwork@gmail.com"</td>
+      <td>2022-03-25</td>
+      <td>35000000</td>
+      <td>active</td>
+      <td>Apple</td>
+      <td>2022-03-25</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="deleteNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/1" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>admin2</td>
+      <td>Tommy2</td>
+      <td>Krisna2</td>
+      <td>tommykpwork2@gmail.com</td>
+      <td>2022-03-30</td>
+      <td>5000000</td>
+      <td>active</td>
+      <td>Microsoft</td>
+      <td>2022-03-30</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/2" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Macon Talley</td>
+      <td>India Andrews</td>
+      <td>Terry</td>
+      <td>nunc.pulvinar@aol.couk</td>
+      <td>2022-12-9</td>
+      <td>1772558</td>
+      <td>active</td>
+      <td>Twitter</td>
+      <td>2023-04-15</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/3" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Tobias Austin</td>
+      <td>Hollee Witt</td>
+      <td>Hyde</td>
+      <td>turpis.egestas@yahoo.ca</td>
+      <td>2023-12-24</td>
+      <td>2257536</td>
+      <td>active</td>
+      <td>Microsoft</td>
+      <td>2022-08-6</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/5" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Odessa Bullock</td>
+      <td>Carson Conner</td>
+      <td>Atkinson</td>
+      <td>mauris.nulla@aol.net</td>
+      <td>2023-08-29</td>
+      <td>4554143</td>
+      <td>active</td>
+      <td>Apple</td>
+      <td>2023-07-22</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/6" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Carson Kidd</td>
+      <td>Madonna Scott</td>
+      <td>Richard</td>
+      <td>ante@google.net</td>
+      <td>2022-08-24</td>
+      <td>2606556</td>
+      <td>active</td>
+      <td>Tesla</td>
+      <td>2024-03-14</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/4" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Nolan Rodgers</td>
+      <td>Briar Chandler</td>
+      <td>Ross</td>
+      <td>purus.accumsan@yahoo.org</td>
+      <td>2023-01-15</td>
+      <td>3900399</td>
+      <td>active</td>
+      <td>Cognizant</td>
+      <td>2024-03-30</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/7" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Hiroko Keller</td>
+      <td>Kirsten Gay</td>
+      <td>Patrick</td>
+      <td>nascetur@outlook.couk</td>
+      <td>2024-02-9</td>
+      <td>2420369</td>
+      <td>active</td>
+      <td>Twitter</td>
+      <td>2023-09-17</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/8" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Basil Bonner</td>
+      <td>Leslie Barker</td>
+      <td>Cardenas</td>
+      <td>pellentesque@google.com</td>
+      <td>2024-05-7</td>
+      <td>4305479</td>
+      <td>active</td>
+      <td>Tesla</td>
+      <td>2023-05-6</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/9" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>Cailin Huffman</td>
+      <td>Olga Mejia</td>
+      <td>Solis</td>
+      <td>purus.sapien.gravida@icloud.edu</td>
+      <td>2023-07-24</td>
+      <td>3186254</td>
+      <td>active</td>
+      <td>Microsoft</td>
+      <td>2023-05-31</td>
+      <td style="white-space: nowrap">
+        <a class="btn btn-sm btn-primary me-1" (click)="editNotification()"
+          >Edit</a
+        >
+        <button
+          class="btn btn-sm btn-danger btn-delete-user"
+          (click)="editNotification()"
+        >
+          <span>Delete</span>
+        </button>
+      </td>
+      <td style="white-space: nowrap">
+        <a routerLink="edit/10" class="btn btn-sm btn-primary me-1"
+          >Lihat Detail</a
+        >
+      </td>
+    </tr>
+  </tbody>
+</table>

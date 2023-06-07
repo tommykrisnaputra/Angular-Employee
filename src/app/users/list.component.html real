@@ -1,0 +1,42 @@
+﻿<h1>Employee List</h1>
+<a routerLink="add" class="btn btn-sm btn-success mb-2">Add Employee</a>
+<table datatable [dtOptions]="dtOptions" class="table table-striped">
+    <thead>
+        <tr>
+            <th style="width: 9%"><input type="text" placeholder="First Name" name="search-id"/></th>
+            <th style="width: 9%">Last Name</th>
+            <th style="width: 9%">Username</th>
+            <th style="width: 9%">Email</th>
+            <th style="width: 9%">Birthday</th>
+            <th style="width: 9%">Basic Salary</th>
+            <th style="width: 9%">Status</th>
+            <th style="width: 9%">Group</th>
+            <th style="width: 9%">Description</th>
+            <th style="width: 9%"></th>
+            <th style="width: 9%"></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of users">
+            <td>{{user.firstName}}</td>
+            <td>{{user.lastName}}</td>
+            <td>{{user.username}}</td>
+            <td>{{user.email}}</td>
+            <td>{{user.birthDate}}</td>
+            <td>{{user.basicSalary}}</td>
+            <td>{{user.status}}</td>
+            <td>{{user.group}}</td>
+            <td>{{user.description}}</td>
+            <td style="white-space: nowrap">
+                <a class="btn btn-sm btn-primary me-1" (click)="editNotification(user.firstName)">Edit</a>
+                <button class="btn btn-sm btn-danger btn-delete-user" (click)="deleteNotification(user.firstName)">
+                    <span *ngIf="user.isDeleting" class="spinner-border spinner-border-sm"></span>
+                    <span *ngIf="!user.isDeleting">Delete</span>
+                </button>
+            </td>
+            <td style="white-space: nowrap">
+                <a routerLink="edit/{{user.id}}" class="btn btn-sm btn-primary me-1">Lihat Detail</a>
+            </td>
+        </tr>
+    </tbody>
+</table>

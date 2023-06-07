@@ -1,0 +1,120 @@
+﻿<h1>{{title}}</h1>
+<form *ngIf="!loading" [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div class="row">
+        <div class="mb-3 col">
+            <label class="form-label">First Name</label>
+            <input type="text" formControlName="firstName" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }"/>
+            <div *ngIf="submitted && f.firstName.errors" class="invalid-feedback">
+                <div *ngIf="f.firstName.errors.required">First Name is required</div>
+            </div>
+        </div>
+        <div class="mb-3 col">
+            <label class="form-label">Last Name</label>
+            <input type="text" formControlName="lastName" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.lastName.errors }" />
+            <div *ngIf="submitted && f.lastName.errors" class="invalid-feedback">
+                <div *ngIf="f.lastName.errors.required">Last Name is required</div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="mb-3 col">
+            <label class="form-label">Username</label>
+            <input type="text" formControlName="username" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.username.errors }" />
+            <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
+                <div *ngIf="f.username.errors.required">Username is required</div>
+            </div>
+        </div>
+        <div class="mb-3 col">
+            <label class="form-label">Email</label>
+            <input type="email" formControlName="email" class="form-control" email [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+            <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                <div *ngIf="f.email.errors.required">Email is required</div>
+                <div *ngIf="f.email.errors.email">Email is not valid</div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="mb-3 col">
+            <label class="form-label">Birthday</label>
+            <input type="date" [max]="maxBirthDate" formControlName="birthDate" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.birthDate.errors }" />
+            <div *ngIf="submitted && f.birthDate.errors" class="invalid-feedback">
+                <div *ngIf="f.birthDate.errors.required">Birthday is required</div>
+            </div>
+        </div>
+        <div class="mb-3 col">
+            <div *ngIf="edit">
+                <label class="form-label">Basic Salary</label>
+                <div class="form-control">
+                    Rp. {{basicSalary | number:'':'es'}},00
+                </div>
+            </div>
+            <div *ngIf="!edit">
+                <label class="form-label">Basic Salary</label>
+                <input type="number" formControlName="basicSalary" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.basicSalary.errors }" />
+                <div *ngIf="submitted && f.basicSalary.errors" class="invalid-feedback">
+                    <div *ngIf="f.basicSalary.errors.required">Basic Salary is required</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="mb-3 col">
+            <label class="form-label">Status</label>
+            <input type="text" formControlName="status" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.status.errors }" />
+            <div *ngIf="submitted && f.status.errors" class="invalid-feedback">
+                <div *ngIf="f.status.errors.required">Status is required</div>
+            </div>
+        </div>
+        <div class="mb-3 col">
+            <div *ngIf="edit">
+                <label class="form-label">Group</label>
+                <div class="form-control">
+                    {{group}}
+                </div>
+            </div>
+            <mat-form-field class="example-full-width" *ngIf="!edit">
+                <mat-label class="form-label">Group</mat-label>
+                <input type="text"
+                       placeholder="Pick one"
+                       aria-label="Number"
+                       matInput
+                       [matAutocomplete]="auto"
+                       required
+                       [formControl]="myControl"
+                       >
+                <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
+                  <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+                    {{option}}
+                  </mat-option>
+                </mat-autocomplete>
+                <div *ngIf="submitted && f.group.errors" class="invalid-feedback">
+                  <div *ngIf="f.group.errors.required">Group is required</div>
+                </div>    
+              </mat-form-field>   
+        </div>
+    </div>
+    <div class="row">
+        <div class="mb-3 col">
+            <label class="form-label">Description</label>
+            <input type="text" formControlName="description" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.description.errors }" [disabled]="edit"/>
+            <div *ngIf="submitted && f.description.errors" class="invalid-feedback">
+                <div *ngIf="f.description.errors.required">Description is required</div>
+            </div>
+        </div>
+    </div>
+    <div class="mb-3" *ngIf="!edit">
+        <button [disabled]="submitting" class="btn btn-primary">
+            <span *ngIf="submitting" class="spinner-border spinner-border-sm me-1"></span>
+            Save
+        </button>
+        <a routerLink="/users" class="btn btn-link">Cancel</a>
+    </div>
+    <div class="mb-3" *ngIf="edit">
+        <button [disabled]="submitting" class="btn btn-primary" routerLink="/users">
+            OK
+        </button>
+    </div>
+</form>
+<div *ngIf="loading" class="text-center m-5">
+    <span class="spinner-border spinner-border-lg align-center"></span>
+</div>
